@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/spotify-icon.png">
+</head>
+<body>
+<!-- the left side bar of the web page -->
+    <div class="sidebar">
+        <!-- the first side bar with home and search -->
+        <div class="bar1">
+            <ul>
+                <!-- home section -->
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <span id="home">Home</span>
+                    </a>
+                </li>
+
+                <!-- search section -->
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Search</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- the second side bar with your libary section, playlist button, search and recent section and liked songs section. -->
+        <div class="bar2">
+            <ul>
+
+                <!-- Your libary section -->
+                <li>
+                    <div class="library">
+                        <!-- your library part -->
+                        <div class="part1">
+                            <a href="#">
+                                <i class="fa-solid fa-book"></i>
+                                <span>Your Library</span>
+                            </a>
+                        </div>
+                        <!-- create and details arrow -->
+                        <div class="part2">
+                            <a href="#">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- playlist button  -->
+                <li>
+                    <div class="PlaylistButton">
+                        <button>Playlist</button>
+                    </div>
+                </li>
+
+                <!-- search and recent section -->
+                <li>
+                    <div class="SearchandRecents">
+                        <!-- search part -->
+                        <div class="search">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                        <!-- recent part -->
+                        <div class="recents">
+                            <a href="#">
+                                <span>Recents</span>
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <!-- liked songs section -->
+                <li>
+                    <div class="LikedSongs">
+                        <div class="HeartImage">
+                            <a href="#">
+                                <img src="images/liked-songs.png" alt="">
+                            </a>
+                        </div>
+                        <div class="text">
+                            <a href="#">
+                                <span>Liked Songs</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<!-- the main part of the web page -->
+    <div class="main-container">
+        <!-- the top bar of the main part -->
+        <div class="top-part">
+            <!-- the previous and next button at the top bar -->
+            <div class="pre-next-buttons">
+                <button type="button" class="fa-solid fa-chevron-left"></button>
+                <button type="button" class="fa-solid fa-chevron-right"></button>
+            </div>
+            <!-- the premium, intall, notification and profile -->
+            <div class="premium-part">
+                <div class="explore">
+                    <button><span>Explore Premium</span></button>
+                </div>
+                <div class="install">
+                    <button><i class="fa-regular fa-circle-down"></i> <span>Install App</span></button>
+                </div>
+                <div class="bell">
+                    <button><i class="fa-regular fa-bell"></i></button>
+                </div>
+                <div class="user">
+                    <button><i class="fa-regular fa-user"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- the main content -->
+        <div class="bigbox">
+            <div class="heading">
+                <h2 style="color: white; margin-bottom: 30px; font-size: 22px;">Popular albums</h2>
+                <p>Show all</p>
+            </div>
+            <div class="content">
+                <div class="smallbox">
+                    <img src="images/popular_albums/1_151x151.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>ANIMAL</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">Manan Bhardwaj</a>
+                        <a href="#">Vishal Mishra</a>
+                        <a href="#">Janni</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/popular_albums/2.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Satranga (From Animal)</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">Arjit Singh,</a>
+                        <a href="#">Shreyas Puranik,</a>
+                        <a href="#">Siddharth</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/popular_albums/3.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Tu hai kahan</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">AUR</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/popular_albums/4.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Kabir Singh</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">Various Artists</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/popular_albums/5.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Aashiqui 2</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">Mithoon,</a>
+                        <a href="#">Ankit Tiwari,</a>
+                        <a href="#">Jeet Gannguli</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/popular_albums/6.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Still Rollin</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">Shubh</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/popular_albums/7.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Heeriye  (feat. Arijit Singh)</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">Jasleen Royal,</a>
+                        <a href="#">Arijith Singh,</a>
+                        <a href="#">Harrykahanhai</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- second section -->
+        <div class="bigbox">
+            <div class="heading">
+                <h2 style="color: white; margin-bottom: 30px; font-size: 22px;">Big Hits!</h2>
+                <p>Show all</p>
+            </div>
+            <div class="content">
+                <div class="smallbox">
+                    <img src="images/charts/1.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Trending Valentine's Hits</h4>
+                    </div>
+                    <div class="singer">
+                        <a>India's Ultimate Love Playlists.</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/charts/2.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Indie from India</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">Best of Indian Indie Scene.</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/charts/3.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Trending Now India</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">Everything you're listening/ Should be...</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/charts/4.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Hot Hits Tamil</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">Tune into the hottest tracks of Kollywood!</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/charts/5.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Hots Hits India</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">The Hottest Tracks in India.</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/charts/6.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Hot Hits Telugu</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">Tune into the Hottest tracts of Tollywood!</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/charts/7.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Trending Now Punjabi</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">All that's viral, stream now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- forth section -->
+        <div class="bigbox">
+            <div class="heading">
+                <h2 style="color: white; margin-bottom: 30px; font-size: 22px;">Popular artists</h2>
+                <p>Show all</p>
+            </div>
+            <div class="content">
+                <div class="smallbox">
+                    <img src="images/Popular_artists/1.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Shreya Ghoshal</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">Artists</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/Popular_artists/2.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Pritam</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">Artists</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/Popular_artists/3.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Arijit Singh</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">Artists</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/Popular_artists/4.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Anirudh Ravichander</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">Artists</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/Popular_artists/5.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Alka Yagnik</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">Artists</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/Popular_artists/6.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>Amitabh Bhattacharya</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">Artists</a>
+                    </div>
+                </div>
+
+                <div class="smallbox">
+                    <img src="images/Popular_artists/7.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <div class="name">
+                        <h4>A.R. Rahman</h4>
+                    </div>
+                    <div class="singer">
+                        <a href="#">Artists</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- the music player section -->
+        <div class="music-player">
+            <!-- right part of the music player -->
+            <div class="part1">
+                <div class="image">
+                    <img src="images/music-player-image.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <a href="#">
+                        <h4>Cities: Skylines Hits PRO and More Announced Titles - Stadiacast 151</h4>
+                        <h6> Stadia Cast-A Google Stadia Podcast</h6>
+                    </a>
+                </div>
+                <div class="plus">
+                    <i class="fa-regular fa-square-plus"></i>
+                </div>
+            </div>
+            <!-- the middle part of the player -->
+            <div class="part2">
+                <div class="button1">
+                    <span>1x</span>
+                </div>
+                <div class="button2">
+                    <span>
+                        <i class="fa-solid fa-arrow-rotate-left"></i>
+                    </span>
+                </div>
+                <div class="button3">
+                    <span>
+                        <i class="fa-solid fa-backward-step"></i>
+                    </span>
+                </div>
+                <div class="button4">
+                    <span>
+                        <i class="fa-solid fa-circle-play"></i>
+                    </span>
+                </div>
+                <div class="button5">
+                    <span>
+                        <i class="fa-solid fa-forward-step"></i>
+                    </span>
+                </div>
+                <div class="button6">
+                    <span>
+                        <i class="fa-solid fa-arrow-rotate-left fa-flip-horizontal"></i>
+                    </span>
+                </div>
+            </div>
+            <!-- right part of the player -->
+            <div class="part3">
+                <div class="button1">
+                    <span>
+                        <i class="fa-regular fa-file-audio"></i>
+                    </span>
+                </div>
+                <div class="button2">
+                    <span>
+                        <i class="fa-solid fa-layer-group"></i>
+                    </span>
+                </div>
+                <div class="button3">
+                    <span>
+                        <i class="fa-solid fa-laptop"></i>
+                    </span>
+                </div>
+                <div class="button4">
+                    <span>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer section -->
+        <footer>
+            <div class="part1">
+                <div class="links">
+                    <div class="sec1">
+                        <ul>
+                            <li style="font-weight: bolder;">Company</li>
+                            <li>About</li>
+                            <li>Jobs</li>
+                            <li>For the Record</li>
+                        </ul>
+                    </div>
+                    <div class="sec2">
+                        <ul>
+                            <li style="font-weight: bolder;">Communities</li>
+                            <li>For Artists</li>
+                            <li>Developers</li>
+                            <li>Advertising</li>
+                            <li>Investors</li>
+                            <li>Vendors</li>
+                        </ul>
+                    </div>
+                    <div class="sec3">
+                        <ul>
+                            <li style="font-weight: bolder;">Useful links</li>
+                            <li>Support</li>
+                            <li>Free Moblies App</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="socials">
+                    <button><i class="fa-brands fa-instagram"></i></button>
+                    <button><i class="fa-brands fa-facebook"></i></button>
+                    <button><i class="fa-brands fa-twitter"></i></button>
+                </div>
+            </div>
+            <hr>
+
+            <div class="part2">
+                <div class="links">
+                    <ul>
+                        <li>Legal</li>
+                        <li>Privacy Center</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookies</li>
+                        <li>About Ads</li>
+                        <li>Accessibility</li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>© 2023 Spotify AB</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- linking the font awesome icon library. -->
+    <script src="https://kit.fontawesome.com/39cb8f51ea.js" crossorigin="anonymous"></script>
+</body>
+</html>

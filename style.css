@@ -1,0 +1,387 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+/* the whole side bar styling */
+.sidebar {
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 10px;
+    display: grid;
+    gap: 5px;
+}
+
+.bar1 {
+    background-color: #121212;
+    min-width: 400px;
+    padding: 10px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.bar2 {
+    background-color: #121212;
+    min-height: 300px;
+    padding: 10px;
+    height: 800px;
+    border-radius: 10px;
+}
+
+/* targeting the unordered list in bar1 and bar2 of the sidebar */
+.sidebar .bar1 ul, .sidebar .bar2 ul {
+    list-style: none;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.sidebar .bar1 ul li, .sidebar .bar2 ul li {
+    padding-top: 20px;
+
+}
+
+.sidebar .bar1 ul li a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar .bar1 ul li a, .sidebar .bar2 ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+/* targeting the library div inside bar 2 */
+.sidebar .bar2 .library {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar .bar2 .library .part2 i {
+    margin-left: 20px;
+}
+
+.sidebar .bar2 .library .part1 a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar .bar2 .library i:hover {
+    color: white;
+    font-weight: bold;
+}
+
+/* targeting the playlists button in the sidebar */
+.sidebar .bar2 button {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    border-style: none;
+    color: white;
+    background-color: #090909;
+}
+
+.sidebar .bar2 button:hover {
+    background-color: #1b1b1b;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* targerting the search and recents section */
+.sidebar .bar2 .SearchandRecents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar .bar2 .SearchandRecents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar .bar2 .SearchandRecents .search a:hover, 
+.sidebar .bar2 .SearchandRecents .recents a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+/* targeting the liked section */
+.sidebar .bar2 .LikedSongs img {
+    height: 48px;
+    width: 48px;
+}
+
+.sidebar .LikedSongs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar .LikedSongs .text a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+/* main container  */
+.main-container {
+    margin-left: 440px;
+    margin-right: 20px;
+    border-radius: 6px;
+    background-color: #121212;
+}
+
+/* top part of the main container */
+.main-container .top-part {
+    display: flex;
+    justify-content: space-between;
+    background-color: #121212;
+    margin-right: 5px;
+    padding: 14px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    /* position: fixed;
+    width: 70%; */
+}
+
+/* the previous and next buttons of the top bar */
+.top-part .pre-next-buttons button {
+    color: #7a7a7a;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: 0px;
+    background-color: #090909;
+    margin-right: 10px;
+}
+
+/* the right part of the top bar */
+.top-part .premium-part {
+    display: flex;
+    gap: 10px;
+}
+
+.top-part .premium-part button{
+    font-size: 14px;
+    padding: 7px;
+    border-radius: 20px;
+    border-style: none;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+.top-part .premium-part button:hover {
+    font-size: 15px;
+}
+
+.top-part .premium-part .install button {
+    color: white;
+    background-color: #090909;
+}
+
+.top-part .premium-part .bell button {
+    color: white;
+    background-color: #090909;
+}
+
+.top-part .premium-part .user button {
+    color: white;
+    background-color: #090909;
+}
+
+/* the music player section */
+.music-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #212121;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* the left part of the music player */
+.music-player .part1 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+}
+.music-player .part1 a {
+    text-decoration: none;
+    color: white;
+}
+.music-player .part1 h4:hover,
+.music-player .part1 h6:hover
+{
+    text-decoration: underline;
+}
+
+/* the middle part of the music player */
+.music-player .part2 {
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+}
+
+/* the right part of the music player */
+.music-player .part3 {
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+}
+
+/* the main part of the webpage */
+.bigbox {
+    /* margin-top: 10px; */
+    padding: 20px 40px;
+}
+
+.bigbox .content {
+    display: flex;
+    gap: 20px ;
+    overflow: hidden;
+}
+
+.bigbox .heading {
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: space-between;
+}
+.bigbox .heading p {
+    color: #989898;
+    font-size: 15px;
+}
+.bigbox .heading:hover {
+    text-decoration: underline;
+}
+
+.bigbox .heading p:hover {
+    cursor: pointer;
+}
+
+.bigbox .content .smallbox {
+    min-width: 140px;
+    width: 160px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.bigbox .content .smallbox:hover {
+    background-color: #252525;
+}
+
+.bigbox .content .smallbox img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.bigbox .content .smallbox .play {
+    position: relative;
+}
+.bigbox .content .smallbox .play .fa {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s ;
+}
+.bigbox .content .smallbox:hover .play .fa {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.bigbox .content .smallbox h4 {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bigbox .content .smallbox a {
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.bigbox .content .smallbox a:hover {
+    text-decoration: underline;
+}
+
+/* footer section */
+footer {
+    color: white;
+    margin-bottom: 150px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 50px;
+}
+
+footer .part1 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+footer .part1 .links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+footer .part1 .links ul li {
+    list-style: none;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+footer .part1 .socials button {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 100%;
+    background-color: #252525;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+}
+
+footer .part2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 13px;
+}
+
+footer .part2 ul li {
+    list-style: none;
+    display: inline;
+    padding-left: 20px;
+    color: #b3b3b3;
+    font-size: 13px;
+}
+
+footer hr {
+    color: #b3b3b3;
+}
